@@ -1,3 +1,5 @@
+import random
+
 # Numpy [Python]
 # Ejercicios de profundización
 
@@ -32,5 +34,14 @@ if __name__ == '__main__':
     print('Comenzamos a divertirnos!')
     # A partir de aquí escriba el código que resuelve el enunciado
     # Leer el enunciado con atención y consultar cualquier duda
+    
 
-    print("terminamos")
+    numeros = [random.randint(1, 10) for x in range(3)]  
+
+
+    suma = lambda x: (f'{x}\nSuma: {sum(x)}') if (sum(x) <= 21) else (f'{x}\nsuma: {sum(x)} ¡perdiste!')
+
+    print(suma(numeros))
+
+
+
