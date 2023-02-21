@@ -35,6 +35,11 @@ if __name__ == '__main__':
     # Lista de numeros
     numeros = [1, -5, 4, 3]
 
-    # numeros_potencia = list(map....)
+    potencia_2 = lambda x: x**2
+    print(potencia_2(3))
+    
+
+    numeros_potencia = list(map(lambda x: x**2, numeros))
+    print(numeros_potencia)
 
     print("terminamos")
